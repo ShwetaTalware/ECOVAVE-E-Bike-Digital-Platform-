@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOVAVE Models - Premium E-Bike Collection</title>
+       <link rel="stylesheet" href="/static/CSS/Models.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/models-bg.jpg" as="image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="eco-nav">
+        <div class="logo-container">
+            <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="logo-img" loading="lazy">
+            <div class="logo-text"><span class="logo-name">ECOVAVE</span><span class="logo-subtitle">Manufacturing LLP</span></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="models.html" class="active"><i class="fas fa-motorcycle"></i> Models</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="{{ url_for('login') }}"><i class="fas fa-envelope"></i>Admin Login</a></li>
+
+        </ul>
+        <div class="burger" aria-label="Menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Models Header Section -->
+    <section class="models-header">
+        <div class="header-content">
+            <h1>Our E-Bike Collection</h1>
+            <p>Experience the future of mobility with ECOVAVE's premium electric bikes</p>
+            </div>
+        </div>
+        <div class="header-overlay"></div>
+    </section>
+
+    <!-- Main Models Section -->
+    <section class="model-showcase">
+        <!-- Standard Model -->
+        <div class="model-detail" id="standard">
+            <div class="model-gallery">
+                <div class="main-image">
+                    <img src="/static/Assets/ebike-1.jpg" alt="ECOVAVE Indus" loading="lazy">
+                </div>
+            </div>
+            <div class="model-specs">
+                <div class="specs-header">
+                    <h2>Indus</h2>
+                    <p class="model-tagline">The perfect entry-level e-bike for daily commuters</p>
+                    <div class="price-section">
+                        <span class="current-price">₹75,999</span>
+                        <span class="original-price">₹82,999</span>
+                        <span class="discount">10% OFF</span>
+                    </div>
+                </div>
+                
+                <div class="key-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Top Speed</h4>
+                            <p>45 km/h</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Range</h4>
+                            <p>90-100 km</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Motor</h4>
+                            <p>60V BLDC</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Battery</h4>
+                            <p>35Ah Lithium-ion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-table">
+                    <h3><i class="fas fa-list-alt"></i> Technical Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Motor Type</td>
+                            <td>BLDC Hub Motor</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Power</td>
+                            <td>1500W Peak</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Type</td>
+                            <td>Lithium Ion (NMC)</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time</td>
+                            <td>3-4 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Max Load</td>
+                            <td>150 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>Front & Rear Disc</td>
+                        </tr>
+                        <tr>
+                            <td>Tyre Type</td>
+                            <td>Tubeless</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2+1 Years Battery, 1 Year Motor</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="cta-button primary-btn test-ride-btn pulse"><i class="fas fa-motorcycle"></i> Book Test Ride</button>
+                    <button class="cta-button secondary-btn brochure-btn"><i class="fas fa-download"></i> Download Brochure</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Magnetic Model -->
+        <div class="model-detail" id="magnetic">
+            <div class="model-gallery">
+                <div class="main-image">
+                    <img src="/static/Assets/ebike-2.jpg" alt="ECOVAVE Magnetic" loading="lazy">
+                </div>
+            </div>
+            <div class="model-specs">
+                <div class="specs-header">
+                    <h2>Magnetic</h2>
+                    <p class="model-tagline">Premium design with enhanced features</p>
+                    <div class="price-section">
+                        <span class="current-price">₹82,999</span>
+                        <span class="original-price">₹89,999</span>
+                        <span class="discount">8% OFF</span>
+                    </div>
+                </div>
+                
+                <div class="key-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Top Speed</h4>
+                            <p>50 km/h</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Range</h4>
+                            <p>80-90 km</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Motor</h4>
+                            <p>60V BLDC</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Battery</h4>
+                            <p>35Ah Lithium-ion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-table">
+                    <h3><i class="fas fa-list-alt"></i> Technical Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Motor Type</td>
+                            <td>BLDC Hub Motor</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Power</td>
+                            <td>1800W Peak</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Type</td>
+                            <td>Lithium Ion (NMC)</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time</td>
+                            <td>3-4 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Max Load</td>
+                            <td>150 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>Front & Rear Disc</td>
+                        </tr>
+                        <tr>
+                            <td>Tyre Type</td>
+                            <td>Tubeless</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2+1 Years Battery, 1 Year Motor</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="cta-button primary-btn test-ride-btn pulse"><i class="fas fa-motorcycle"></i> Book Test Ride</button>
+                    <button class="cta-button secondary-btn brochure-btn"><i class="fas fa-download"></i> Download Brochure</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Warrior Pro Model -->
+        <div class="model-detail" id="warrior">
+            <div class="model-gallery">
+                <div class="main-image">
+                    <img src="/static/Assets/ebike-3.jpg" alt="ECOVAVE Warrior Pro" loading="lazy">
+                </div>
+            </div>
+            <div class="model-specs">
+                <div class="specs-header">
+                    <h2>Warrior Pro</h2>
+                    <p class="model-tagline">High performance for demanding riders</p>
+                    <div class="price-section">
+                        <span class="current-price">₹79,499</span>
+                        <span class="original-price">₹85,999</span>
+                        <span class="discount">8% OFF</span>
+                    </div>
+                </div>
+                
+                <div class="key-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Top Speed</h4>
+                            <p>55 km/h</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Range</h4>
+                            <p>90-100 km</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Motor</h4>
+                            <p>60V BLDC</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Battery</h4>
+                            <p>35Ah Lithium-ion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-table">
+                    <h3><i class="fas fa-list-alt"></i> Technical Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Motor Type</td>
+                            <td>BLDC Hub Motor</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Power</td>
+                            <td>2000W Peak</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Type</td>
+                            <td>Lithium Ion (NMC)</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time</td>
+                            <td>3-4 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Max Load</td>
+                            <td>150 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>Front Disc / Rear Drum</td>
+                        </tr>
+                        <tr>
+                            <td>Tyre Type</td>
+                            <td>Tubeless</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2+1 Years Battery, 1 Year Motor</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="cta-button primary-btn test-ride-btn pulse"><i class="fas fa-motorcycle"></i> Book Test Ride</button>
+                    <button class="cta-button secondary-btn brochure-btn"><i class="fas fa-download"></i> Download Brochure</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Zanskar Model -->
+        <div class="model-detail" id="zanskar">
+            <div class="model-gallery">
+                <div class="main-image">
+                    <img src="/static/Assets/ebike-4.jpg" alt="ECOVAVE Zanskar" loading="lazy">
+                </div>
+            </div>
+            <div class="model-specs">
+                <div class="specs-header">
+                    <h2>Zanskar</h2>
+                    <p class="model-tagline">Our flagship model with premium features</p>
+                    <div class="price-section">
+                        <span class="current-price">₹89,999</span>
+                        <span class="original-price">₹95,999</span>
+                        <span class="discount">6% OFF</span>
+                    </div>
+                </div>
+                
+                <div class="key-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Top Speed</h4>
+                            <p>60 km/h</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Range</h4>
+                            <p>90-100 km</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Motor</h4>
+                            <p>72V BLDC</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Battery</h4>
+                            <p>36.4Ah Lithium-ion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-table">
+                    <h3><i class="fas fa-list-alt"></i> Technical Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Motor Type</td>
+                            <td>BLDC Hub Motor</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Power</td>
+                            <td>2500W Peak</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Type</td>
+                            <td>Lithium Ion (NMC)</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time</td>
+                            <td>3-4 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Max Load</td>
+                            <td>180 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>Front Disc / Rear Drum</td>
+                        </tr>
+                        <tr>
+                            <td>Tyre Type</td>
+                            <td>Tubeless</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2+1 Years Battery, 1 Year Motor</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="cta-button primary-btn test-ride-btn pulse"><i class="fas fa-motorcycle"></i> Book Test Ride</button>
+                    <button class="cta-button secondary-btn brochure-btn"><i class="fas fa-download"></i> Download Brochure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="section-header">
+            <h2>Model <span>Comparison</span></h2>
+            <p class="section-subtitle">See how our e-bikes stack up against each other</p>
+        </div>
+        
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Indus</th>
+                        <th>Magnetic</th>
+                        <th>Warrior Pro</th>
+                        <th>Zanskar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Motor Voltage</td>
+                        <td>60V</td>
+                        <td>60V</td>
+                        <td>60V</td>
+                        <td>72V</td>
+                    </tr>
+                    <tr>
+                        <td>Motor Power</td>
+                        <td>1500W</td>
+                        <td>1800W</td>
+                        <td>2000W</td>
+                        <td>2500W</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Capacity</td>
+                        <td>35Ah</td>
+                        <td>35Ah</td>
+                        <td>35Ah</td>
+                        <td>36.4Ah</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>90-100 km</td>
+                        <td>80-90 km</td>
+                        <td>90-100 km</td>
+                        <td>90-100 km</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>45 km/h</td>
+                        <td>50 km/h</td>
+                        <td>55 km/h</td>
+                        <td>60 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Max Load</td>
+                        <td>150 kg</td>
+                        <td>150 kg</td>
+                        <td>150 kg</td>
+                        <td>180 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Brakes</td>
+                        <td>Disc/Disc</td>
+                        <td>Disc/Disc</td>
+                        <td>Disc/Drum</td>
+                        <td>Disc/Drum</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>₹75,999</td>
+                        <td>₹82,999</td>
+                        <td>₹79,499</td>
+                        <td>₹89,999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Test Ride CTA Section -->
+    <section class="test-ride-cta">
+        <div class="cta-content">
+            <h2>Experience an ECOVAVE E-Bike</h2>
+            <p>Book a test ride today and feel the difference of sustainable mobility</p>
+            <a href="contact.html" class="cta-button primary-btn pulse"><i class="fas fa-calendar-alt"></i> Schedule Test Ride</a>
+        </div>
+        <div class="cta-overlay"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <h3>ECOVAVE</h3>
+                            <p>Manufacturing LLP</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">ECOVAVE Manufacturing LLP is committed to revolutionizing urban mobility through sustainable electric vehicle solutions that reduce environmental impact while delivering exceptional performance.</p>
+                    <div class="footer-owner">
+                        <img src="/static/Assets/owner.jpg" alt="Vandana Rajendra Badgujar" class="owner-img">
+                        <div class="owner-info">
+                            <h4>Vandana Rajendra Badgujar</h4>
+                            <p>Authorized Signatory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="models.html"><i class="fas fa-chevron-right"></i> E-Bike Models</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Registered Office:</strong> D2 2004 EON Homes, Rajiv Gandhi IT Park, Hinjewadi Phase 3, Pune 411057 (MH) India</p>
+                        <p><i class="fas fa-industry"></i> <strong>Factory:</strong> A44, Nardana Growth Center, Phase 2, Bangale MIDC Area, NH-52, Nardana, Dhule, 425404 (MH) India</p>
+                        <p><i class="fas fa-phone"></i> +91 7410 158 140</p>
+                        <p><i class="fas fa-envelope"></i> info@ecovave.com</p>
+                        <p><i class="fas fa-file-invoice"></i> GST No.: 27AAJFE7481Q1ZJ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1KiGmFLN4b/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ecovave2023?igsh=MTRjcTk3YmN0OWp3ag==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rajendra-badgujar-12811816?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ECOVAVE Manufacturing LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/JS/Main.js" defer></script>
+    <script src="js/models.js" defer></script>
+</body>
+</html>

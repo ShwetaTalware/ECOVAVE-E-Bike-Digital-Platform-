@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOVAVE Manufacturing LLP - Frequently Asked Questions</title>
+      <link rel="stylesheet" href="/static/CSS/FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="eco-nav">
+        <div class="logo-container">
+            <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-name">ECOVAVE</span>
+                <span class="logo-subtitle">Manufacturing LLP</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="models.html"><i class="fas fa-motorcycle"></i> Models</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="faq.html" class="active"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="{{ url_for('login') }}"><i class="fas fa-envelope"></i>Admin Login</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- FAQ Header Section -->
+    <section class="faq-header">
+        <div class="header-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about ECOVAVE e-bikes</p>
+        </div>
+        <div class="header-overlay"></div>
+    </section>
+
+    <!-- FAQ Main Section -->
+    <section class="faq-main">
+        <div class="faq-container">
+            <!-- Search Box -->
+            <div class="faq-search">
+                <input type="text" placeholder="Search FAQs..." id="faq-search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- General Questions Section -->
+            <div class="faq-section" id="general-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-question-circle"></i> General Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What makes ECOVAVE e-bikes different from others?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ECOVAVE e-bikes are designed with a perfect balance of performance, sustainability, and affordability. Our bikes feature:</p>
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <i class="fas fa-battery-full"></i>
+                                    <h4>High-quality Batteries</h4>
+                                    <p>Industry-leading lithium-ion batteries with extended warranties</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-bolt"></i>
+                                    <h4>Powerful Motors</h4>
+                                    <p>Efficient BLDC motors for smooth performance</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-leaf"></i>
+                                    <h4>Eco-friendly</h4>
+                                    <p>Built with sustainable materials</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class="fas fa-headset"></i>
+                                    <h4>Superior Support</h4>
+                                    <p>Nationwide service network</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need a license to ride an ECOVAVE e-bike?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>In India, our e-bikes are classified as electric bicycles and don't require a license or registration as they comply with government policies:</p>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check-circle"></i> Motor power under 250W</li>
+                                <li><i class="fas fa-check-circle"></i> Speed limited to 25 km/h</li>
+                                <li><i class="fas fa-check-circle"></i> Compliant with EV regulations</li>
+                            </ul>
+                            <p class="note">Note: Some high-performance models may require registration - please check your chosen model's specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Questions Section -->
+            <div class="faq-section" id="technical-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs"></i> Technical Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the range of ECOVAVE e-bikes on a single charge?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The range varies by model under standard conditions:</p>
+                            <div class="range-table">
+                                <div class="range-row header">
+                                    <div class="range-cell">Model</div>
+                                    <div class="range-cell">Range (km)</div>
+                                </div>
+                                <div class="range-row">
+                                    <div class="range-cell">Standard Model</div>
+                                    <div class="range-cell">90-100 km</div>
+                                </div>
+                                <div class="range-row">
+                                    <div class="range-cell">Magnetic</div>
+                                    <div class="range-cell">80-90 km</div>
+                                </div>
+                                <div class="range-row">
+                                    <div class="range-cell">Warrior Pro</div>
+                                    <div class="range-cell">90-100 km</div>
+                                </div>
+                                <div class="range-row">
+                                    <div class="range-cell">Zanskar</div>
+                                    <div class="range-cell">90-100 km</div>
+                                </div>
+                            </div>
+                            <p class="note">Actual range may vary based on riding conditions, terrain, load, and riding style.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does it take to charge the battery?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="charging-info">
+                                <div class="charging-card">
+                                    <i class="fas fa-charging-station"></i>
+                                    <h4>Standard Charging</h4>
+                                    <p>3-4 hours for full charge from empty</p>
+                                </div>
+                                <div class="charging-card">
+                                    <i class="fas fa-bolt"></i>
+                                    <h4>Fast Charging</h4>
+                                    <p>2-3 hours with optional fast charger</p>
+                                </div>
+                            </div>
+                            <p class="tip"><i class="fas fa-lightbulb"></i> <strong>Pro Tip:</strong> Charge after each use and avoid complete discharges to maximize battery life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Purchase Questions Section -->
+            <div class="faq-section" id="purchase-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shopping-cart"></i> Purchase Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Where can I buy an ECOVAVE e-bike?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ECOVAVE e-bikes are available through multiple channels:</p>
+                            <div class="purchase-options">
+                                <div class="option-card">
+                                    <i class="fas fa-store"></i>
+                                    <h4>Showrooms</h4>
+                                    <p>Our company showrooms in Pune and Dhule</p>
+                                </div>
+                                <div class="option-card">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h4>Dealerships</h4>
+                                    <p>Authorized dealers across Maharashtra</p>
+                                </div>
+                                <div class="option-card">
+                                    <i class="fas fa-globe"></i>
+                                    <h4>Online</h4>
+                                    <p>Official website with direct delivery</p>
+                                </div>
+                                <div class="option-card">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <h4>E-commerce</h4>
+                                    <p>Selected online platforms</p>
+                                </div>
+                            </div>
+                            <p>Visit our <a href="contact.html" class="inline-link">Contact page</a> to find the nearest dealer.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are there any government subsidies available?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, the Indian government offers various incentives for electric vehicles:</p>
+                            <div class="incentive-grid">
+                                <div class="incentive-card">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <h4>FAME II Subsidy</h4>
+                                    <p>Up to ₹10,000 subsidy</p>
+                                </div>
+                                <div class="incentive-card">
+                                    <i class="fas fa-percentage"></i>
+                                    <h4>Reduced GST</h4>
+                                    <p>Only 5% (vs 28% for petrol)</p>
+                                </div>
+                                <div class="incentive-card">
+                                    <i class="fas fa-road"></i>
+                                    <h4>Tax Exemptions</h4>
+                                    <p>Possible road tax exemptions</p>
+                                </div>
+                                <div class="incentive-card">
+                                    <i class="fas fa-city"></i>
+                                    <h4>State Benefits</h4>
+                                    <p>Additional state-specific incentives</p>
+                                </div>
+                            </div>
+                            <p class="note">Our sales team can help you understand and apply for all eligible benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maintenance Questions Section -->
+            <div class="faq-section" id="maintenance-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tools"></i> Maintenance Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How often does an e-bike need servicing?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend the following maintenance schedule:</p>
+                            <div class="maintenance-schedule">
+                                <div class="schedule-item">
+                                    <div class="schedule-icon"><i class="fas fa-calendar-check"></i></div>
+                                    <div class="schedule-content">
+                                        <h4>First Service</h4>
+                                        <p>After 500 km or 1 month (whichever comes first)</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-icon"><i class="fas fa-calendar-alt"></i></div>
+                                    <div class="schedule-content">
+                                        <h4>Regular Service</h4>
+                                        <p>Every 3,000 km or 6 months</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-icon"><i class="fas fa-battery-three-quarters"></i></div>
+                                    <div class="schedule-content">
+                                        <h4>Battery Check</h4>
+                                        <p>Every 6 months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="note">E-bikes generally require less maintenance than petrol vehicles with fewer moving parts and no engine oil changes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I ride my e-bike in the rain?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="weather-info">
+                                <div class="weather-card yes">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>Yes, you can ride in rain</h4>
+                                    <p>ECOVAVE e-bikes are water-resistant</p>
+                                </div>
+                                <div class="weather-card no">
+                                    <i class="fas fa-times-circle"></i>
+                                    <h4>But avoid</h4>
+                                    <p>Deep puddles or submerged areas</p>
+                                </div>
+                            </div>
+                            <div class="rain-tips">
+                                <h4><i class="fas fa-umbrella"></i> Rain Riding Tips:</h4>
+                                <ul class="check-list">
+                                    <li><i class="fas fa-check"></i> Dry the bike after heavy rain</li>
+                                    <li><i class="fas fa-check"></i> Don't charge when wet</li>
+                                    <li><i class="fas fa-check"></i> Store in dry place</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warranty Questions Section -->
+            <div class="faq-section" id="warranty-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shield-alt"></i> Warranty Questions</h2>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What does the warranty cover?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our industry-leading warranty includes:</p>
+                            <div class="warranty-coverage">
+                                <div class="coverage-card">
+                                    <div class="coverage-header battery">
+                                        <i class="fas fa-battery-full"></i>
+                                        <h4>Battery</h4>
+                                    </div>
+                                    <div class="coverage-details">
+                                        <p>2 years standard + 1 year extended</p>
+                                        <p>(with proper maintenance)</p>
+                                    </div>
+                                </div>
+                                <div class="coverage-card">
+                                    <div class="coverage-header motor">
+                                        <i class="fas fa-cog"></i>
+                                        <h4>Motor</h4>
+                                    </div>
+                                    <div class="coverage-details">
+                                        <p>1 year against defects</p>
+                                    </div>
+                                </div>
+                                <div class="coverage-card">
+                                    <div class="coverage-header frame">
+                                        <i class="fas fa-bicycle"></i>
+                                        <h4>Frame</h4>
+                                    </div>
+                                    <div class="coverage-details">
+                                        <p>3 years against defects</p>
+                                    </div>
+                                </div>
+                                <div class="coverage-card">
+                                    <div class="coverage-header parts">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                        <h4>Components</h4>
+                                    </div>
+                                    <div class="coverage-details">
+                                        <p>6 months to 1 year</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="note">The warranty doesn't cover normal wear and tear, accidental damage, or unauthorized modifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I claim warranty service?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Follow these steps for warranty claims:</p>
+                            <div class="claim-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Contact Us</h4>
+                                        <p>Reach customer service or visit authorized center</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Provide Documents</h4>
+                                        <p>Purchase invoice and warranty card</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Diagnosis</h4>
+                                        <p>Our technicians will assess the issue</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Repair</h4>
+                                        <p>Free service if covered by warranty</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="tip"><i class="fas fa-exclamation-circle"></i> Always use authorized service centers to maintain warranty coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions Section -->
+            <div class="still-questions">
+                <div class="still-content">
+                    <h2>Still have questions?</h2>
+                    <p>Can't find the answer you're looking for? Our team is happy to help.</p>
+                    <div class="contact-options">
+                        <a href="contact.html" class="cta-button primary-btn"><i class="fas fa-envelope"></i> Contact Us</a>
+                        <a href="tel:+911234567890" class="cta-button secondary-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <h3>ECOVAVE</h3>
+                            <p>Manufacturing LLP</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">ECOVAVE Manufacturing LLP is committed to revolutionizing urban mobility through sustainable electric vehicle solutions that reduce environmental impact while delivering exceptional performance.</p>
+                    <div class="footer-owner">
+                        <img src="/static/Assets/owner.jpg" alt="Vandana Rajendra Badgujar" class="owner-img">
+                        <div class="owner-info">
+                            <h4>Vandana Rajendra Badgujar</h4>
+                            <p>Authorized Signatory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="models.html"><i class="fas fa-chevron-right"></i> E-Bike Models</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Registered Office:</strong> D2 2004 EON Homes, Rajiv Gandhi IT Park, Hinjewadi Phase 3, Pune 411057 (MH) India</p>
+                        <p><i class="fas fa-industry"></i> <strong>Factory:</strong> A44, Nardana Growth Center, Phase 2, Bangale MIDC Area, NH-52, Nardana, Dhule, 425404 (MH) India</p>
+                        <p><i class="fas fa-phone"></i> +91 7410 158 140</p>
+                        <p><i class="fas fa-envelope"></i> info@ecovave.com</p>
+                        <p><i class="fas fa-file-invoice"></i> GST No.: 27AAJFE7481Q1ZJ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1KiGmFLN4b/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ecovave2023?igsh=MTRjcTk3YmN0OWp3ag==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rajendra-badgujar-12811816?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ECOVAVE Manufacturing LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/JS/Main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ECOVAVE Manufacturing LLP</title>
+      <link rel="stylesheet" href="/static/CSS/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="eco-nav">
+        <div class="logo-container">
+            <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="logo-img">
+            <div class="logo-text"><span class="logo-name">ECOVAVE</span><span class="logo-subtitle">Manufacturing
+                    LLP</span></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="models.html"><i class="fas fa-motorcycle"></i> Models</a></li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="{{ url_for('login') }}"><i class="fas fa-envelope"></i>Admin Login</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Contact Header Section -->
+    <section class="contact-header">
+       <div class="header-content animate__animated animate__fadeIn">
+            <h1>Connect With Us</h1>
+            <p>We're here to help and answer any questions you might have</p>
+        </div><div class="header-overlay"></div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card animate__animated animate__fadeInLeft">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Registered Office</h3>
+                        <p>D2 2004 EON Homes, Rajiv Gandhi IT Park, Hinjewadi Phase 3, Pune 411057 (MH) India</p>
+                        <a href="#" class="map-link" data-location="registered">View on Map <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="info-card animate__animated animate__fadeInLeft animate__delay-1s">
+                    <div class="info-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Factory Address</h3>
+                        <p>A44, Nardana Growth Center, Phase 2, Bangale MIDC Area, NH-52, Nardana, Dhule, 425404 (MH)
+                            India</p>
+                        <a href="#" class="map-link" data-location="factory">View on Map <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="info-card animate__animated animate__fadeInLeft animate__delay-2s">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <p>+91 7410 158 140</p>
+                        <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
+                        <a href="tel:+91XXXXXXXXXX" class="call-btn">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="info-card animate__animated animate__fadeInLeft animate__delay-3s">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>info@ecovave.com</p>
+                        <p>support@ecovave.com</p>
+                        <a href="mailto:info@ecovave.com" class="email-btn">Email Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container animate__animated animate__fadeInRight">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    <div class="form-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" method="post" action="{{ url_for('contact') }}">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject*</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-tag"></i>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="test-ride">Book a Test Ride</option>
+                                <option value="dealer">Become a Dealer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Interested Model (if applicable)</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-motorcycle"></i>
+                            <select id="model" name="model">
+                                <option value="">Select a model</option>
+                                <option value="indus">Indus</option>
+                                <option value="magnetic">Magnetic</option>
+                                <option value="warrior">Warrior Pro</option>
+                                <option value="zanskar">Zanskar</option>
+                                <option value="not-applicable">Not Applicable</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message*</label>
+                        <div class="textarea-with-icon">
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Type your message here..."></textarea>
+                            <i class="fas fa-comment textarea-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button primary-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="section-header">
+            <h2>Find Us on <span>Map</span></h2>
+            <p class="section-subtitle">Visit our offices or get directions to our locations</p>
+        </div>
+        <div class="map-container">
+            <div class="map-tabs">
+                <button class="map-tab active" data-location="registered">
+                    Registered Office
+                </button>
+                <button class="map-tab" data-location="factory">
+                    Factory Location
+                </button>
+            </div>
+            <div class="map-wrapper">
+                <iframe id="locationMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.692790357015!2d73.729856315625!3d18.592895982635832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb13b7b3013d%3A0x5d6b0a8b9a8b5b1a!2sEON%20IT%20Park%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1624456789012!5m2!1sen!2sin">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="cta-content">
+            <h3>Still have questions?</h3>
+            <p>Our customer support team is available to help you with any inquiries</p>
+            <div class="cta-buttons">
+                <a href="tel:+917410158140" class="cta-button secondary-btn">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+                <a href="mailto:info@ecovave.com" class="cta-button primary-btn">
+                    <i class="fas fa-envelope"></i> Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="footer-logo-container">
+                    <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="footer-logo">
+                    <div class="footer-logo-text"><span class="footer-logo-name">ECOVAVE</span><span
+                            class="footer-logo-subtitle">Manufacturing LLP</span></div>
+                </div>
+                <p>ECOVAVE Manufacturing LLP is committed to revolutionizing urban mobility through sustainable electric
+                    vehicle solutions that reduce environmental impact while delivering exceptional performance.</p>
+                <div class="footer-owner">
+                    <div class="owner-image">
+                        <img src="/static/Assets/owner.jpg" alt="Vandana Rajendra Badgujar">
+                    </div>
+                    <div class="owner-info">
+                        <h4>Vandana Rajendra Badgujar</h4>
+                        <p>Authorized Signatory</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="models.html"><i class="fas fa-chevron-right"></i> E-Bike Models</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Registered Office: </strong>   D2 2004 EON Homes,
+                        Rajiv Gandhi IT Park, Hinjewadi Phase 3, Pune 411057 (MH) India</p>
+                    <p><i class="fas fa-industry"></i> <strong>Factory:</strong> A44, Nardana Growth Center, Phase 2,
+                        Bangale MIDC Area, NH-52, Nardana, Dhule, 425404 (MH) India</p>
+                    <p><i class="fas fa-phone"></i> +91 7410 158 140</p>
+                    <p><i class="fas fa-envelope"></i> info@ecovave.com</p>
+                    <p><i class="fas fa-file-invoice"></i> GST No.: 27AAJFE7481Q1ZJ</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1KiGmFLN4b/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ecovave2023?igsh=MTRjcTk3YmN0OWp3ag=="><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rajendra-badgujar-12811816?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ECOVAVE Manufacturing LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Clear form and show success message
+                    contactForm.reset();
+                    const successMsg = document.createElement('div');
+                    successMsg.className = 'alert alert-success';
+                    successMsg.textContent = 'Message sent successfully!';
+                    contactForm.insertBefore(successMsg, contactForm.firstChild);
+                    setTimeout(() => successMsg.remove(), 3000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                const errorMsg = document.createElement('div');
+                errorMsg.className = 'alert alert-error';
+                errorMsg.textContent = 'An error occurred. Please try again.';
+                contactForm.insertBefore(errorMsg, contactForm.firstChild);
+                setTimeout(() => errorMsg.remove(), 3000);
+            });
+        });
+    }
+});
+</script>
+
+
+
+</body>
+
+</html>
