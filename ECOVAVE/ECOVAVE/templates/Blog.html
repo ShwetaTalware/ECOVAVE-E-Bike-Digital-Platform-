@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOVAVE Blog - Sustainable Mobility Insights</title>
+    <link rel="stylesheet" href="/static/CSS/Blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="eco-nav">
+        <div class="logo-container">
+            <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-name">ECOVAVE</span>
+                <span class="logo-subtitle">Manufacturing LLP</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="models.html"><i class="fas fa-motorcycle"></i> Models</a></li>
+            <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="{{ url_for('login') }}"><i class="fas fa-envelope"></i>Admin Login</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Blog Header Section -->
+    <section class="blog-header">
+        <div class="header-content">
+            <h1>ECOVAVE <span>Insights</span></h1>
+            <p>Discover the latest in sustainable mobility and e-bike technology</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search articles..." id="blog-search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="categories-container">
+            <a href="#all" class="category-btn active" data-category="all"><i class="fas fa-layer-group"></i> All Topics</a>
+            <a href="#technology" class="category-btn" data-category="technology"><i class="fas fa-microchip"></i> Technology</a>
+            <a href="#sustainability" class="category-btn" data-category="sustainability"><i class="fas fa-leaf"></i> Sustainability</a>
+            <a href="#maintenance" class="category-btn" data-category="maintenance"><i class="fas fa-tools"></i> Maintenance</a>
+            <a href="#news" class="category-btn" data-category="news"><i class="fas fa-newspaper"></i> Industry News</a>
+        </div>
+    </section>
+
+    <!-- Main Blog Content -->
+    <section class="blog-main">
+        <div class="blog-container">
+            <!-- Featured Article -->
+            <article class="blog-article featured" id="technology" data-category="technology">
+                <div class="article-image-container">
+                    <div class="article-image">
+                        <img src="/static/Assets/technology_1.jpg
+                        " alt="E-bike battery technology">
+                        <div class="image-overlay"></div>
+                        <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-microchip"></i> Technology</span>
+                    <h2>The Future of E-Bike Battery Technology</h2>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> May 15, 2025</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                        <span><i class="fas fa-share-alt"></i> Share</span>
+                    </div>
+                    
+                    <div class="article-body">
+                        <p>Electric bike batteries have undergone a revolutionary transformation in recent years. The latest lithium-ion NMC (Nickel Manganese Cobalt) batteries now offer significantly higher energy density, with ECOVAVE's 2025 models achieving 300Wh/kg compared to just 200Wh/kg in 2020.</p>
+                        
+                        <div class="article-features">
+                            <div class="feature-item">
+                                <i class="fas fa-bolt"></i>
+                                <p>Real-time cell monitoring and balancing</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-temperature-low"></i>
+                                <p>Advanced thermal management (-20°C to 60°C)</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <p>Smart charging algorithms</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <p>State-of-charge accuracy within 1%</p>
+                            </div>
+                        </div>
+                        
+                        <p>The new ECOVAVE PowerCell batteries now support ultra-fast charging, reaching 80% capacity in just 45 minutes. With 800+ charge cycles while maintaining over 80% capacity, these batteries are designed to outlast your bike.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sustainability Article -->
+            <article class="blog-article" id="sustainability" data-category="sustainability">
+                <div class="article-image-container">
+                    <div class="article-image">
+                        <img src="/static/Assets/sustainability.jpg" alt="Sustainable urban mobility">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-leaf"></i> Sustainability</span>
+                    <h2>How E-Bikes Are Reducing Urban Carbon Footprints</h2>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> April 28, 2025</span>
+                        <span><i class="far fa-clock"></i> 6 min read</span>
+                        <span><i class="fas fa-share-alt"></i> Share</span>
+                    </div>
+                    
+                    <div class="article-body">
+                        <p>Urban transportation accounts for nearly 30% of CO2 emissions in Indian cities, with two-wheelers contributing significantly to both emissions and congestion. Our comprehensive case study in Pune reveals that switching just 10% of motorcycle commuters to ECOVAVE e-bikes could reduce emissions by 15,000 tons annually while decreasing traffic congestion by 7%.</p>
+                        
+                        <div class="article-features">
+                            <div class="feature-item">
+                                <i class="fas fa-battery-full"></i>
+                                <p>90% less energy consumption than petrol bikes</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cloud"></i>
+                                <p>85% fewer greenhouse gases</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-recycle"></i>
+                                <p>100% recyclable batteries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Maintenance Article -->
+            <article class="blog-article" id="maintenance" data-category="maintenance">
+                <div class="article-image-container">
+                    <div class="article-image">
+                        <img src="/static/Assets/maintenance.jpg" alt="E-bike maintenance">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-tools"></i> Maintenance</span>
+                    <h2>Essential Winter Care for Your E-Bike</h2>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> March 10, 2025</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                        <span><i class="fas fa-share-alt"></i> Share</span>
+                    </div>
+                    
+                    <div class="article-body">
+                        <p>Winter conditions can significantly impact your e-bike's performance and longevity. Follow these expert recommendations to keep your ECOVAVE running optimally through cold months:</p>
+                        
+                        <div class="maintenance-tips">
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-battery-full"></i></div>
+                                <div class="tip-content">
+                                    <h4>Battery Care</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> Store batteries indoors when not in use</li>
+                                        <li><i class="fas fa-check-circle"></i> Charge at room temperature (15-25°C)</li>
+                                        <li><i class="fas fa-check-circle"></i> Keep charge between 30-70% for storage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-broom"></i></div>
+                                <div class="tip-content">
+                                    <h4>Cleaning & Protection</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> Wipe down after wet/salty rides</li>
+                                        <li><i class="fas fa-check-circle"></i> Apply silicone spray to electrical contacts</li>
+                                        <li><i class="fas fa-check-circle"></i> Check tire pressure weekly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Industry News Article -->
+            <article class="blog-article" id="news" data-category="news">
+                <div class="article-image-container">
+                    <div class="article-image">
+                        <img src="/static/Assets/news.jpg" alt="EV industry news">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-newspaper"></i> Industry News</span>
+                    <h2>2025 Government Incentives for Electric Vehicles</h2>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> February 22, 2025</span>
+                        <span><i class="far fa-clock"></i> 7 min read</span>
+                        <span><i class="fas fa-share-alt"></i> Share</span>
+                    </div>
+                    
+                    <div class="article-body">
+                        <p>The Indian government has significantly expanded its EV subsidy program, with new benefits specifically targeting electric two-wheelers:</p>
+                        
+                        <div class="incentive-grid">
+                            <div class="incentive-card">
+                                <div class="incentive-icon"><i class="fas fa-rupee-sign"></i></div>
+                                <div class="incentive-content">
+                                    <h4>Increased Subsidies</h4>
+                                    <p>Up to ₹25,000 for advanced battery models</p>
+                                </div>
+                            </div>
+                            
+                            <div class="incentive-card">
+                                <div class="incentive-icon"><i class="fas fa-road"></i></div>
+                                <div class="incentive-content">
+                                    <h4>Tax Benefits</h4>
+                                    <p>No road tax in 5 major states</p>
+                                </div>
+                            </div>
+                            
+                            <div class="incentive-card">
+                                <div class="incentive-icon"><i class="fas fa-charging-station"></i></div>
+                                <div class="incentive-content">
+                                    <h4>Charging Support</h4>
+                                    <p>₹1,000 subsidy for home chargers</p>
+                                </div>
+                            </div>
+                            
+                            <div class="incentive-card">
+                                <div class="incentive-icon"><i class="fas fa-city"></i></div>
+                                <div class="incentive-content">
+                                    <h4>Urban Benefits</h4>
+                                    <p>Free parking in city centers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Technology Article 2 -->
+            <article class="blog-article" id="technology2" data-category="technology">
+                <div class="article-image-container">
+                    <div class="article-image">
+                        <img src="/static/Assets/technology_2.jpg" alt="Smart e-bike features">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <span class="article-category"><i class="fas fa-microchip"></i> Technology</span>
+                    <h2>Smart Features in Modern E-Bikes</h2>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> January 15, 2025</span>
+                        <span><i class="far fa-clock"></i> 9 min read</span>
+                        <span><i class="fas fa-share-alt"></i> Share</span>
+                    </div>
+                    
+                    <div class="article-body">
+                        <p>ECOVAVE's 2025 models incorporate cutting-edge smart technology that transforms the riding experience:</p>
+                        
+                        <div class="feature-showcase">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div class="feature-content">
+                                    <h4>Mobile Integration</h4>
+                                    <p>Bluetooth connectivity with dedicated app</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div class="feature-content">
+                                    <h4>GPS Tracking</h4>
+                                    <p>Real-time location tracking</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                                <div class="feature-content">
+                                    <h4>Regenerative Braking</h4>
+                                    <p>Adjustable intensity to maximize range</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Stay Updated Section -->
+    <section class="stay-updated">
+        <div class="update-container">
+            <div class="update-content">
+                <h2><i class="fas fa-paper-plane"></i> Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest insights on sustainable mobility</p>
+                <form class="update-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="cta-button primary-btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="form-note">
+                        <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe at any time.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="/static/Assets/logo.png" alt="ECOVAVE Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <h3>ECOVAVE</h3>
+                            <p>Manufacturing LLP</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">ECOVAVE Manufacturing LLP is committed to revolutionizing urban mobility through sustainable electric vehicle solutions that reduce environmental impact while delivering exceptional performance.</p>
+                    <div class="footer-owner">
+                        <img src="/static/Assets/owner.jpg" alt="Vandana Rajendra Badgujar" class="owner-img">
+                        <div class="owner-info">
+                            <h4>Vandana Rajendra Badgujar</h4>
+                            <p>Authorized Signatory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="models.html"><i class="fas fa-chevron-right"></i> E-Bike Models</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Registered Office:</strong> D2 2004 EON Homes, Rajiv Gandhi IT Park, Hinjewadi Phase 3, Pune 411057 (MH) India</p>
+                        <p><i class="fas fa-industry"></i> <strong>Factory:</strong> A44, Nardana Growth Center, Phase 2, Bangale MIDC Area, NH-52, Nardana, Dhule, 425404 (MH) India</p>
+                        <p><i class="fas fa-phone"></i> +91 7410 158 140</p>
+                        <p><i class="fas fa-envelope"></i> info@ecovave.com</p>
+                        <p><i class="fas fa-file-invoice"></i> GST No.: 27AAJFE7481Q1ZJ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1KiGmFLN4b/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ecovave2023?igsh=MTRjcTk3YmN0OWp3ag==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rajendra-badgujar-12811816?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ECOVAVE Manufacturing LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/JS/Main.js"></script>
+    
+</body>
+</html>
